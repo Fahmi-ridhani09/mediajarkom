@@ -1,0 +1,229 @@
+/* Styling sidebar dan kontainer tetap */
+.page-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar-menu {
+    width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu ul li a:hover,
+.sidebar-menu ul li a.active {
+    background-color: #d4a373;
+    color: white;
+}
+
+.content-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.material-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.model-container {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.topic {
+    display: none;
+}
+
+.topic.active {
+    display: block;
+}
+
+p {
+    text-align: justify;
+}
+
+.paragraph-container {
+    background-color: #ffffff; /* Warna coklat cerah muda */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* shadow lebih besar dan lebih gelap */
+    margin-bottom: 20px;
+}
+
+
+.paragraph-container p {
+    font-size: 1rem;
+    color: #5a3a1b;
+    /* Warna teks coklat tua agar kontras */
+    line-height: 1.6;
+}
+
+
+/* Judul materi atau subjudul */
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Tombol Next */
+.next-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #8b2e00;
+}
+
+/* Container untuk gambar */
+.gambar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.gambar {
+    border: 2px solid #fcfcfc;
+    border-radius: 1px;
+}
+
+
+/* Tombol toggle */
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 999;
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    /* default: disembunyikan (muncul di mobile) */
+}
+
+/* Logo */
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Responsive dan interaktif */
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .sidebar-menu {
+        width: 280px;
+        /* Diperlebar */
+        background-color: #d4a373;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar-menu:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+    }
+
+
+    .sidebar-menu.active {
+        left: 0;
+    }
+
+    .page-container {
+        flex-direction: column;
+    }
+
+    .content-container {
+        margin-left: 0;
+        padding-top: 60px;
+    }
+
+    .sidebar-menu ul li a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar-menu ul li a:hover,
+    .sidebar-menu ul li a.active {
+        background-color: #8b2e00;
+        color: #fff;
+        transform: scale(1.05);
+    }
+
+}
