@@ -30,7 +30,7 @@ class guruController extends Controller
             })
             ->paginate(10);
 
-        return view("guru\halamanguru", compact("users","kelas", 'quizzes', 'materi', 'nama'));
+        return view("guru.halamanguru", compact("users","kelas", 'quizzes', 'materi', 'nama'));
         
 
         
