@@ -136,7 +136,11 @@
                     <div class="card-body">
                         @foreach ($kelas as $kelas)
                             @php
+                            if ($users == 0) {
+                                $persentase=0;
+                            } else {
                                 $persentase = min(100, ($kelas->jumlah_siswa / $users) * 100);
+                            }
                             @endphp
                             <div class="mb-4">
                                 <div class="text-small float-right font-weight-bold text-muted">{{ $kelas->jumlah_siswa }}
