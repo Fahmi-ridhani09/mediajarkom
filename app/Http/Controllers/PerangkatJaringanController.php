@@ -8,7 +8,7 @@ use App\Helpers\PerangkatJaringan;
 class PerangkatJaringanController extends Controller
 {
     public function startQuiz(){
-        $durasiEvaluasi = 15;
+        $durasiEvaluasi = 10;
         $soalQuiz = PerangkatJaringan::getQuestion();
         $endtime = date("Y-m-d H:i:s",strtotime("+$durasiEvaluasi minutes"));
         $startTime =date("Y-m-d H:i:s");
