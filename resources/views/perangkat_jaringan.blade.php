@@ -67,7 +67,7 @@
                 <!-- Topik 1: Pengenalan -->
                 <div id="topik1" class="topic active">
                     <!-- Video YouTube di bagian atas -->
-                    <p style="text-align: center; font-weight: bold;"><strong>Simak video berikut ini:</strong></p>
+                    <p style="text-align: center; font-weight: bold;"><strong>Simak videoooo berikut ini:</strong></p>
                     <br>
                     <div class="video-container">
                         <iframe width="560" height="315"
