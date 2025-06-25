@@ -67,15 +67,15 @@
                 <!-- Topik 1: Pengenalan -->
                 <div id="topik1" class="topic active">
                     <!-- Video YouTube di bagian atas -->
-                    <p style="text-align: center; font-weight: bold;"><strong>Simak videoooo berikut ini:</strong></p>
+                    <p style="text-align: center; font-weight: bold;"><strong>Simak video berikut ini:</strong></p>
                     <br>
                     <div class="video-container">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/N2CNS1N9gZo?si=pkotOrEctZ4jUnRW"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <video width="650" height="315" controls>
+                            <source src="video/konsep.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
                     </div>
+
                     <br>
                     <h2>Mengenal Komponen</h2>
                     <br>
