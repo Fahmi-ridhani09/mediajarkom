@@ -52,11 +52,10 @@
                     <p style="text-align: center; font-weight: bold;"><strong>Simak video berikut ini:</strong></p>
                     <br>
                     <div class="video-container">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/niL_EfuEHIg?si=U4Fw81jD8-mrwfgR"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <video width="650" height="315" controls>
+                            <source src="video/topologi.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
                     </div>
 
                     <!-- Judul dan Konten -->
