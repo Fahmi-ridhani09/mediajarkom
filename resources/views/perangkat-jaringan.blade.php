@@ -219,7 +219,7 @@
                 margin: 10% auto;
                 padding: 20px;
                 border-radius: 10px;
-                width: 60%;
+                width: 100%;
                 max-width: 1000px;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
                 position: relative;
@@ -252,10 +252,97 @@
             .btn-nav:hover {
                 background-color: #45a049;
             }
+
+            .petunjuk-bar {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 20px auto;
+                padding: 15px 10px;
+                background-color: #ffffff;
+                border: 2px solid #deb887;
+                border-radius: 12px;
+                max-width: 900px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                font-family: 'Segoe UI', sans-serif;
+            }
+
+            .petunjuk-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #5a3d1a;
+            }
+
+            .btn-petunjuk {
+                background-color: #deb887;
+                border: none;
+                color: white;
+                padding: 8px 14px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 14px;
+                margin-left: 10px;
+            }
+
+            .btn-petunjuk:hover {
+                background-color: #caa06a;
+            }
+
+            .popup-petunjuk {
+                display: none;
+                position: fixed;
+                z-index: 10000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .popup-petunjuk .popup-content {
+                background-color: #fff;
+                margin: 10% auto;
+                padding: 20px 30px;
+                border: 1px solid #888;
+                width: 100%;
+                max-width: 700px;
+                border-radius: 12px;
+                font-family: 'Segoe UI', sans-serif;
+                color: #333;
+                position: relative;
+            }
+
+
+            .popup-petunjuk .close-btn {
+                position: absolute;
+                right: 16px;
+                top: 12px;
+                font-size: 22px;
+                font-weight: bold;
+                cursor: pointer;
+            }
         </style>
     </head>
 
     <body>
+        <div class="petunjuk-bar">
+            <div class="petunjuk-item">
+                🖱️ <span>Seret untuk memutar</span>
+            </div>
+            <div class="petunjuk-item">
+                🔍 <span>Scroll untuk zoom</span>
+            </div>
+            <div class="petunjuk-item">
+                👆 <span>Klik objek untuk info</span>
+            </div>
+            <div class="petunjuk-item">
+                <button onclick="openPetunjukPopup()" class="btn-petunjuk">ℹ️ Petunjuk Lengkap</button>
+            </div>
+        </div>
         <div class="model-grid">
             <div class="model-item" data-title="Router"
                 data-description="Router adalah perangkat jaringan yang menghubungkan beberapa jaringan dan meneruskan paket data di antaranya. Fungsi router adalah sebagai penghubung paket data antara dua segmen jaringan atau lebih. Misal pada sebuah kampus yang memiliki gedung yang terpisah antara gedung kampus 1 dengan kampus 2. Masing – masing kampus memiliki sebuah jaringan dengan Net ID yang berbeda, kampus 1 IP 192.168.1.0 sedangkan kampus 2 IP 202.100.10.0, maka supaya komputer client yang berada di kampus 1 dengan kampus 2 dapat berkomunikasi harus dihubungkan dengan router.">
@@ -305,6 +392,29 @@
             <a href="materi/halamanmateri" class="btn-nav">&#8592; Kembali</a>
             <a href="LatihanPerangkatJaringan" class="btn-nav">Selanjutnya &#8594;</a>
         </div>
+        <div id="popup-petunjuk" class="popup-petunjuk">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePetunjukPopup()">&times;</span>
+                <h2>Petunjuk Penggunaan 3D</h2>
+                <p>
+                    Di halaman ini terdapat model bentuk 3D dari komponen perangkat jaringan komputer. Disajikan
+                    model 3D yang
+                    dapat diinteraksikan langsung dengan setiap model untuk memahami fungsi dan tampilannya secara
+                    visual.
+                    <br>
+                    <strong>• Geser / Seret:</strong> Untuk memutar objek 3D ke segala arah<br>
+                    <strong>• Scroll / Cubit:</strong> Untuk melakukan zoom in dan zoom out<br>
+                    <strong>• Klik / Ketuk objek:</strong> Untuk melihat informasi perangkat<br>
+                    <strong>• HP / Tablet:</strong> Gunakan dua jari untuk zoom, satu jari untuk rotasi<br>
+                    <strong>• PC / Laptop:</strong> Gunakan mouse untuk mengontrol objek
+                </p>
+
+            </div>
+        </div>
+
+
+        </div>
+
 
 
 
@@ -753,6 +863,14 @@
                     window.location.href = '/topologi#topik4';
                 }
             });
+
+            function openPetunjukPopup() {
+                document.getElementById('popup-petunjuk').style.display = 'block';
+            }
+
+            function closePetunjukPopup() {
+                document.getElementById('popup-petunjuk').style.display = 'none';
+            }
         </script>
     </body>
 
