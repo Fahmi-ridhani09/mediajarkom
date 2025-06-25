@@ -8,7 +8,7 @@ use App\Helpers\tcpip;
 class tcpipController extends Controller
 {
     public function startQuiz(){
-        $durasiEvaluasi = 15;
+        $durasiEvaluasi = 5;
         $soalQuiz = tcpip::getQuestion();
         $startTime =date("Y-m-d H:i:s");
         $endtime = date("Y-m-d H:i:s",strtotime("+$durasiEvaluasi minutes"));
