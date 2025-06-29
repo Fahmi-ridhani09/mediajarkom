@@ -1,15 +1,35 @@
+<!-- Sidebar Toggle Button -->
+<button id="sidebarToggle"
+    style="
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    background-color: #4B3621;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 22px;
+">
+    <i class="fas fa-bars"></i>
+</button>
+
+
 <!-- Sidebar Container -->
-<div class="main-sidebar sidebar-style-2" style="background-color: #D2B48C; width: 250px;">
+<div class="main-sidebar sidebar-style-2"
+    style="background-color: #D2B48C; width:250px; box-shadow: 2px 0 6px rgba(0,0,0,0.3);">
     <aside id="sidebar-wrapper">
         <!-- Logo -->
         <div class="sidebar-brand">
-            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Computer Icon" style="width: 40px;" />
+            <img src="/images/logo/logopng.png" alt="Logo" style="width:130px; height:80px; margin-top:10px;">
         </div>
 
 
 
         <ul class="sidebar-menu">
-            <li class="menu-header" style="color: #4B3621; font-size: 18px;">Menu</li>
+            <li class="menu-header" style="color: #4B3621; font-size: 18px;"><br></li>
 
             <!-- Tujuan Pembelajaran (Aktif) -->
             <li class="nav-item dropdown active">
@@ -95,6 +115,17 @@
     </aside>
 </div>
 
+<script>
+    document.getElementById('sidebarToggle').addEventListener('click', function() {
+        var sidebar = document.querySelector('.main-sidebar');
+        sidebar.classList.toggle('hidden');
+    });
+</script>
+
+
+
+
+
 <!-- CSS Tambahan -->
 <style>
     .sidebar-text {
@@ -133,7 +164,29 @@
         font-weight: bold;
         border-radius: 5px;
     }
+
+
+    .main-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0 !important;
+        /* Selalu muncul default */
+        width: 250px;
+        height: 100%;
+        background-color: #D2B48C;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    /* Saat hidden, geser keluar */
+    .main-sidebar.hidden {
+        left: -250px !important;
+    }
 </style>
+
+
+
+
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

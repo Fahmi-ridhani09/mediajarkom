@@ -109,7 +109,7 @@
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kuis</title>
+    <title>Evaluasi</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet">
     <!-- Link to Font Awesome for icons -->
@@ -120,12 +120,12 @@
     <nav class="navbar text-white sticky-top" style="background-color: #d2b48c;">
     <div class="container">
         <a class="navbar-brand text-white" href="#">
-            <h4>Kuis {{ $materi }}</h4>
+            <h4>{{ $materi }}</h4>
         </a>
         <div class="d-flex align-items-stretch justify-content-start ">
             <h2 class="m-0"><span class="badge text-bg-warning me-3" id="waktu-durasi">waktu</span></h2>
             <button id="stop_test" class="btn btn-danger  rounded-2"><i class="bi bi-stop-circle-fill"></i> Hentikan
-                Kuis Evaluasi
+                Evaluasi
             </button>
         </div>
     </div>

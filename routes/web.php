@@ -21,6 +21,8 @@ Route::get('/register', function () {
     return view('register');
 });
 
+
+
 Route::get('/materi/halamanmateri', [MateriController::class, 'showLayoutMateri']);
 
 
@@ -30,7 +32,7 @@ Route::get('/materi/halamanmateri', [MateriController::class, 'showLayoutMateri'
 
 Route::get('users', [UserController::class, 'showUsers'])->name('users');
 Route::prefix('guru/users')->name('guru.users.')->group(function () {
-    Route::get('/', [UserController::class, 'index'])->name('index');
+    /*Route::get('/', [UserController::class, 'index'])->name('index');*/
     Route::get('/create', [UserController::class, 'create'])->name('create');
     Route::post('/', [UserController::class, 'store'])->name('store');
     Route::get('/{user}/edit', [UserController::class, 'edit'])->name('edit');
@@ -51,11 +53,15 @@ Route::post("login/proses", [LoginController::class, "login"])->name("login_pros
 Route::post("register/proses", [LoginController::class, "register"])->name("register_proses");
 Route::get("logout/proses", [LoginController::class, "logout"])->name("logout_proses");
 
-
-Route::middleware("auth")->group(function () {
-    Route::get('/', function () {
-        return view('home', ['title' => 'Home Page']);
+Route::get('/', function () {
+        return view('Landing', ['title' => 'Landing Page']);
     })->name("home");
+    
+Route::middleware("auth")->group(function () {
+
+    Route::get('/home', function () {
+        return view('home');
+    });
 
     Route::get('/about', function () {
         return view('about', ['title' => 'about']);

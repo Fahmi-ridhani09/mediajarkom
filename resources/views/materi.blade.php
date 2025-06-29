@@ -117,8 +117,10 @@
         <div class="materi-wrapper">
             <!-- Container untuk judul utama dan subjudul -->
             <div class="title-container">
-                <div class="page-title">Silahkan Pilih Materi</div>
+                <a href="{{ url('materi/halamanmateri') }}">
+                <div class="page-title">Klik untuk Masuk Menu Materi</div>
                 <div class="subtitle">Jaringan Komputer & Internet</div>
+                </a>
             </div>
 
             <!-- Container untuk menu -->

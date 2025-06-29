@@ -55,7 +55,7 @@
 @section('main-content')
     <div class="gambar-container" style="text-align:center;">
         <div class="tujuan-title">Peta Konsep</div>
-        <img src="{{ asset('images/peta_konsep.png') }}" alt="Gambar Jaringan Komputer" width="400" height="350">
+        <img src="{{ asset('images/peta_konsep.png') }}" alt="Gambar Jaringan Komputer" width="600" height="390">
     </div><br>
     <div class="tujuan-container" id="tj">
         <div class="tujuan-title">Tujuan Pembelajaran</div>

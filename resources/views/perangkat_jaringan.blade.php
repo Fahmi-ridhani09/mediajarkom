@@ -71,7 +71,7 @@
                     <br>
                     <div class="video-container">
                         <video width="650" height="315" controls>
-                            <source src="video/konsep.mp4" type="video/mp4">
+                            <source src="video/konsep2.mp4" type="video/mp4">
                             Browser Anda tidak mendukung tag video.
                         </video>
                     </div>
