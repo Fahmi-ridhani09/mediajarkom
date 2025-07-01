@@ -67,8 +67,8 @@
         <div id="right-panel">
             <div class="soal-box">
                 <h3>📘 Soal</h3>
-                <p>Kantor memiliki <strong>4 komputer</strong> dan <strong>1 buah router</strong>. Semua perangkat harus
-                    saling terhubung</strong>.</p>
+                <p>Sebuah Kantor memiliki <strong>4 buah komputer</strong> dan <strong>1 buah router</strong>. Semua perangkat harus
+                    saling terhubung dengan router sebagai pusat Koneksi utama sehingga setiap komputer terhubung ke router secara langsung. </strong>.</p>
                 <p><strong>Pertanyaan:</strong> Manakah jenis topologi yang sesuai dan cocok digunakan?</p>
             </div>
 
