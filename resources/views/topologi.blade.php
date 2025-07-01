@@ -57,7 +57,16 @@
                             Browser Anda tidak mendukung tag video.
                         </video>
                     </div>
+                    <br>
 
+                    <h2>Tujuan Pembelajaran</h2>
+                    <br>
+                    <div class ="paragraph-container">
+                        <p>• Siswa dapat menjelaskan pengertian topologi jaringan komputer.</p>
+                        <br>
+                        <p>• Siswa dapat mengidentifikasi jenis-jenis topologi jaringan.</p>
+                    </div>
+                    <br>
                     <!-- Judul dan Konten -->
                     <h2>Topologi</h2>
                     <br>

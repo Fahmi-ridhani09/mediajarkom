@@ -133,6 +133,10 @@
         .hero-img-slider img.active {
             opacity: 1;
         }
+
+        .feature-content {
+            color: white;
+        }
     </style>
     <title>Landing Page</title>
 
@@ -215,15 +219,18 @@
                         </div>
                         <div class="feature-content">
                             <h3>Tujuan Pembelajaran</h3>
-                            <p>Menjelaskan Komponen Jaringan Komputer</p>
-                            <br>
-                            <p>Menjelaskan Model Jaringan Komputer dalam bentuk Lapisan OSI</p>
-                            <br>
-                            <p>Menjelaskan Konsep TCP/IP</p>
-                            <br>
-                            <p>Menjelaskan Topologi Jaringan Komputer</p>
-                            <p>Menentukan dan merancang Topologi jaringan yang sesuai dengan kebutuhan</p>
+                            <ul>
+                                <li>Menjelaskan Komponen Jaringan Komputer</li>
+                                <br>
+                                <li>Menjelaskan Model Jaringan Komputer dalam bentuk Lapisan OSI</li>
+                                <br>
+                                <li>Menjelaskan Konsep TCP/IP</li>
+                                <br>
+                                <li>Menjelaskan Topologi Jaringan Komputer</li>
+                                <li>Menentukan dan merancang Topologi jaringan yang sesuai dengan kebutuhan</li>
+                            </ul>
                         </div>
+
                     </div>
                     <!-- .feature-panel end -->
                 </div>

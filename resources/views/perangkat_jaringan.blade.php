@@ -67,7 +67,7 @@
                 <!-- Topik 1: Pengenalan -->
                 <div id="topik1" class="topic active">
                     <!-- Video YouTube di bagian atas -->
-                    <p style="text-align: center; font-weight: bold;"><strong>Simak video berikut ini:</strong></p>
+                    <p style="text-align: center; font-weight: bold;"><strong>Simak video berikut ini :</strong></p>
                     <br>
                     <div class="video-container">
                         <video width="650" height="315" controls>
@@ -76,6 +76,14 @@
                         </video>
                     </div>
 
+                    <br>
+                    <h2>Tujuan Pembelajaran</h2>
+                    <br>
+                    <div class ="paragraph-container">
+                        <p>• Siswa dapat mengidentifikasi Perangkat Keras Utama Komponen Jaringan Komputer</p>
+                        <br>
+                        <p>• Siswa dapat menjelaskan fungsi masing-masing komponen jaringan dengan tepat.</p>
+                    </div>
                     <br>
                     <h2>Mengenal Komponen</h2>
                     <br>

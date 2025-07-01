@@ -33,6 +33,15 @@
             <div class="content-container">
                 <div class="material-title">Materi Pembelajaran TCP/IP</div>
 
+                <h2>Tujuan Pembelajaran</h2>
+                    <br>
+                    <div class ="paragraph-container">
+                        <p>• Siswa dapat menjelaskan pengertian model TCP/IP</p>
+                        <br>
+                        <p>• Siswa dapat menjelaskan cara kerja TCP/IP</p>
+                    </div>
+                    <br>
+
                 <!-- Topik 1: Pengenalan -->
                 <div id="topik1" class="topic active">
                     <h2>Pengenalan TCP/IP</h2>

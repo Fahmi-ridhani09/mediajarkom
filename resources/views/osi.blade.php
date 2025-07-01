@@ -32,6 +32,14 @@
             <div class="content-container">
                 <div class="material-title">Model OSI Layer</div>
 
+                <h2>Tujuan Pembelajaran</h2>
+                    <br>
+                    <div class ="paragraph-container">
+                        <p>• Siswa dapat menyebutkan tujuh lapisan model OSI secara urut</p>
+                        <br>
+                        <p>• Siswa dapat menjelaskan fungsi utama setiap lapisan OSI dengan contoh protokol yang digunakan</p>
+                    </div>
+                    <br>
                 <!-- Topik 1: Pendahuluan -->
                 <div id="topik1" class="topic active">
                     <h2>Pendahuluan</h2>

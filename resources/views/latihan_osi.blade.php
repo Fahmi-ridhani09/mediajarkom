@@ -29,7 +29,7 @@
             Kamu akan mencocokkan protokol jaringan dengan layer OSI.<br>
             <strong>Langkah-langkah:</strong><br>
             <br>
-            1️⃣ Klik salah satu <strong>kotak protokol</strong> di sebelah kanan layar.<br>
+            1️⃣ Klik salah satu <strong>protokol</strong> di sebelah kanan layar.<br>
             2️⃣ Klik <strong>layer OSI</strong> yang sesuai di sebelah kiri.<br>
             3️⃣ Ulangi hingga semua protokol dicocokkan.<br><br>
             Setelah selesai, klik tombol <strong>"Cek Jawaban"</strong> untuk melihat hasilmu!
@@ -42,7 +42,7 @@
     </div>
 
     <div id="tutorialPopup">
-        <h3 style="text-align: center;">Cara Bermain</h3>
+        <h3 style="text-align: center;">Cara Menjawab Soal</h3>
         <video id="tutorialVideo" width="100%" controls loop>
             <source src="video/tutorial.mp4" type="video/mp4">
             Browser Anda tidak mendukung tag video.
@@ -54,7 +54,7 @@
 
 
     <div id="resultPopup">
-        <h3>Hasil Permainan</h3>
+        <h3>Hasil Kuis</h3>
         <p id="scoreSummary"></p>
         <img id="resultImage" src="" alt="Hasil">
         <div class="popup-buttons">
