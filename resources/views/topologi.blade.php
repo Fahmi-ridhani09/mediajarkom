@@ -337,7 +337,7 @@
             }
 
             document.addEventListener("DOMContentLoaded", function() {
-                const links = ["/kuistopologi1" /* "/kuistopologi2" */, "/kuistopologi3"];
+                const links = ["/kuistopologi1" /* "/kuistopologi2" *//*"/kuistopologi3"*/];
                 const randomLink = links[Math.floor(Math.random() * links.length)];
                 document.getElementById("quizLink").setAttribute("href", randomLink);
             });
