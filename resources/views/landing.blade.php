@@ -183,7 +183,7 @@
             <div class="row row-content">
                 <div class="col-12 col-md-12 col-lg-6">
                     <div class="hero-headline">Media Pembelajaran Interaktif Jaringan Komputer & Internet</div>
-                    <div class="hero-bio">Jaringan Komputer & Internet Kelas XI</div>
+                    <div class="hero-bio">Jaringan Komputer & Internet Kelas XI.</div>
                     <div class="hero-action">
                         <a href="{{ url('/home') }}" class="btn btn-gradient">Mulai Belajar</a>
                     </div>
