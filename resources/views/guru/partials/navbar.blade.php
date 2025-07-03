@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg main-navbar" style="background-color: #DEB887;">
+<nav class="navbar navbar-expand-lg main-navbar" style="background-color: #eccda4;">
   <!-- Kiri: Menu Beranda -->
   <ul class="navbar-nav">
     <li class="nav-item">
