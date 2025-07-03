@@ -395,7 +395,7 @@
         <div id="popup-petunjuk" class="popup-petunjuk">
             <div class="popup-content">
                 <span class="close-btn" onclick="closePetunjukPopup()">&times;</span>
-                <h2>Petunjuk Penggunaan 3D</h2>
+                <h2>Petunjuk Penggunaan 3D Model Perangkat Jaringan</h2>
                 <p>
                     Di halaman ini terdapat model bentuk 3D dari komponen perangkat jaringan komputer. Disajikan
                     model 3D yang
@@ -403,7 +403,7 @@
                     visual.
                     <br>
                     <strong>• Geser / Seret:</strong> Untuk memutar objek 3D ke segala arah<br>
-                    <strong>• Scroll / Cubit:</strong> Untuk melakukan zoom in dan zoom out<br>
+                    <strong>• Scroll / Perbesar:</strong> Untuk melakukan zoom in dan zoom out<br>
                     <strong>• Klik / Ketuk objek:</strong> Untuk melihat informasi perangkat<br>
                     <strong>• HP / Tablet:</strong> Gunakan dua jari untuk zoom, satu jari untuk rotasi<br>
                     <strong>• PC / Laptop:</strong> Gunakan mouse untuk mengontrol objek
@@ -420,6 +420,10 @@
 
 
         <script>
+            window.onload = function() {
+                openPetunjukPopup();
+            };
+
             const items = document.querySelectorAll('.model-item');
             const popup = document.getElementById('popup');
             const popupTitle = document.getElementById('popup-title');
@@ -871,6 +875,8 @@
             function closePetunjukPopup() {
                 document.getElementById('popup-petunjuk').style.display = 'none';
             }
+
+             
         </script>
     </body>
 
