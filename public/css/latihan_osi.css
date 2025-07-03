@@ -30,7 +30,7 @@ p {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #fffaf3;
+    background: #ffffff;
     color: #5d4037;
     padding: 10px 15px;
     border-radius: 8px;
@@ -87,8 +87,8 @@ p {
 }
 
 .center-buttons {
-    background-color: #a9746e;
-    color: white;
+    background-color: #ffffff;
+    color: #a9746e;
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -103,8 +103,8 @@ p {
 
 /* Style untuk tombol di dalam container */
 .center-buttons button {
-    background-color: #fff;
-    color: #a9746e;
+    background-color: #a9746e;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     border-radius: 30px;
