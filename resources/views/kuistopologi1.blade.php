@@ -14,7 +14,7 @@
     <div id="main-content">
         <div id="left-panel">
             <div class="instruction-box">
-                <p><strong>Instruksi:</strong></p>
+                <p><strong>Petunjuk :</strong></p>
                 <ol>
                     <li>Baca soal dengan saksama.</li>
                     <li>Pilih jenis topologi jaringan yang paling sesuai dari daftar.</li>
