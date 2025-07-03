@@ -276,20 +276,22 @@ function previous() {
 }
 
 function next() {
-    // Jika skor belum memenuhi KKM (misal minimal 5 jawaban benar)
-    if (typeof correctCount !== 'undefined' && correctCount < 5) {
+    console.log(">>> score =", score);
+    if (typeof score !== 'undefined' && score < 60) {
+        console.log(">>> Kondisi BELUM LULUS terpenuhi");
         Swal.fire({
             icon: 'warning',
             title: 'Belum Lulus',
-            text: 'Skor Anda tidak memenuhi KKM, silakan coba lagi!',
+            text: 'Skor Anda ' + score + ', tidak memenuhi KKM. Silakan coba lagi!',
             confirmButtonText: 'Oke',
         });
         return;
     }
-
-    // Jika memenuhi KKM, lanjut ke halaman berikutnya
+    console.log(">>> Kondisi LULUS");
     window.location.href = '/materi/halamanmateri';
 }
+
+
 
 
 
