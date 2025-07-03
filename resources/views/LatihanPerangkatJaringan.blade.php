@@ -97,12 +97,12 @@
         .button-nomor-soal {
             border: 2px solid var(--coklat-tua);
             color: var(--coklat-tua);
-            background-color: white;
+            background-color: rgb(170, 4, 4);
         }
 
         .button-nomor-soal.active {
             background-color: var(--coklat-tua);
-            color: white;
+            color: rgb(116, 2, 2);
             border-color: var(--coklat-tua);
         }
     </style>
