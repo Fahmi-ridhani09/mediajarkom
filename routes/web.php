@@ -54,7 +54,7 @@ Route::post("register/proses", [LoginController::class, "register"])->name("regi
 Route::get("logout/proses", [LoginController::class, "logout"])->name("logout_proses");
 
 Route::get('/', function () {
-        return view('Landing', ['title' => 'Landing Page']);
+        return view('landing', ['title' => 'Landing Page']);
     })->name("home");
     
 Route::middleware("auth")->group(function () {
